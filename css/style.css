@@ -1,0 +1,293 @@
+body {
+    background-color: darkblue;
+
+}
+
+
+#mainboard {
+    background-image: url("../img/mainboard.png");
+    background-size: 1000px 1000px;
+    width: 1000px;
+    height: 1000px;
+    transform: rotate3d(2, -1, -1, -0.1turn);
+
+}
+
+#cpu, #ram, #PCI-E, #CoolerConnect, #M2-slot, #SATA, #Ethernet\ i\ 3x\ USB\ 3\.2, #AMD\ B550\ Chipset, #HDMI\ i\ DisplayPort{
+    background-image: url("../img/rysunek.svg");
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+
+}
+#ram {
+    top: 300px;
+    left: 720px;
+
+}
+#PCI-E {
+    top: 570px;
+    left: 370px;
+
+}
+#CoolerConnect {
+    top: 60px;
+    left: 280px;
+}
+#M2-slot {
+    top: 700px;
+    left: 430px;
+}
+#SATA {
+    top: 650px;
+    left: 820px;
+
+
+}
+#Ethernet\ i\ 3x\ USB\ 3\.2 {
+    top: 200px;
+    left: 140px;
+
+}
+#AMD\ B550\ Chipset{
+    top: 600px;
+    left: 720px;
+
+}
+#HDMI\ i\ DisplayPort {
+    top: 280px;
+    left: 140px;
+
+}
+
+
+
+
+
+
+
+
+#cpu .tooltiptext,
+#ram .tooltiptext,
+#PCI-E .tooltiptext,
+#CoolerConnect .tooltiptext,
+#M2-slot .tooltiptext,
+#SATA .tooltiptext,
+#Ethernet\ i\ 3x\ USB\ 3\.2 .tooltiptext,
+#AMD\ B550\ Chipset .tooltiptext,
+#HDMI\ i\ DisplayPort .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#cpu:hover .tooltiptext,
+#ram:hover .tooltiptext,
+#PCI-E:hover .tooltiptext,
+#CoolerConnect:hover .tooltiptext,
+#M2-slot:hover .tooltiptext,
+#SATA:hover .tooltiptext,
+#Ethernet\ i\ 3x\ USB\ 3\.2:hover .tooltiptext,
+#AMD\ B550\ Chipset:hover .tooltiptext,
+#HDMI\ i\ DisplayPort:hover .tooltiptext{
+    visibility: visible;}
+#MainboardMain{
+    display: flex; width:100%;
+
+}
+#MainboardPhoto{
+    width: 50%;
+
+}
+#MainboardLegend{
+    width: 50%;
+
+}
+.hide{
+    display: none;
+}
+
+#mainboard:hover{
+    animation-name: mainboard;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes mainboard {
+    0% {position: relative;top: 0}
+    50% {position: relative; top: 30px}
+    100% {position: relative; top: 0}
+}
+
+#cpuInfo .describe,
+#ramInfo .describe,
+#PCIInfo .describe,
+#SATAInfo .describe,
+#CoolerConnectInfo .describe,
+#AMD\ B550\ ChipsetInfo,
+#M2-slotInfo,
+#HDMI\ i\ DisplayPortInfo,
+#EthernetInfo
+{
+    background-image: url("../img/procesor.png");
+    background-size: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#ramInfo
+{
+    background-image: url("../img/ram.png");
+    background-size: 1100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#PCIInfo
+{
+    background-image: url("../img/PCI.png");
+    background-size: 1100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#SATAInfo
+{
+    background-image: url("../img/SATA.png");
+    background-size: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#CoolerConnectInfo
+{
+    background-image: url("../img/Cooler.png");
+    background-size: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#AMD\ B550\ ChipsetInfo
+{
+    background-image: url("../img/Chipset.png");
+    background-size: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#M2-slotInfo
+{
+    background-image: url("../img/M2.png");
+    background-size: 770px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#HDMI\ i\ DisplayPortInfo
+{
+    background-image: url("../img/HDMI.png");
+    background-size: 1150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
+#EthernetInfo
+{
+    background-image: url("../img/Ethernet.png");
+    background-size: 1150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:10px;
+    width:80%;
+    height:350px;
+    color:white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 5px;
+}
