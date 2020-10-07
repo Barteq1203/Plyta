@@ -1,5 +1,5 @@
 #### Mainboard
-#Strona dotycząca charakterystyki płyty głównej ASUS TUF GAMING B550-PLUS
+# Strona dotycząca charakterystyki płyty głównej ASUS TUF GAMING B550-PLUS
 
 ![](https://www.asus.com/media/global/gallery/mdkgfvownlq7czou_setting_000_1_90_end_500.png)
 
